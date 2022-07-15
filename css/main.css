@@ -55,13 +55,15 @@ ul, li {
 	text-decoration: none;
 	padding: 11px 35px;
 	background: #03045E;
+	border-radius: 5px;
 }
 
 .nav .buttonstyle1 {
 	color: #FFFFFF;
 }
 
-.textbanner .buttonstyle1 {
+.banner .buttonstyle1 {
+	background: #0098FF;
 	color: #FFFFFF;
 }
 
@@ -124,4 +126,5 @@ ul, li {
 .finalpodpisy a {
 	margin-left: auto;
 	text-decoration: none;
+	color: #03045E;
 }
