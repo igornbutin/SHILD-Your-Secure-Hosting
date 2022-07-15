@@ -1,0 +1,127 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	/* font-family: 'Ubuntu', sans-serif; */
+	color: 000;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+.header {
+	background: #F7F8FD;
+}
+
+.container {
+	width: 1282px;
+	margin: 0 auto;
+}
+
+
+/* означает обратиться ко всем a в секции header? */
+.header a {
+	color: #03045E;
+}
+
+/* выравнять объекты в одну линию внутри другого объекта*/
+.menu {
+	display:  flex;
+}
+
+/* важно точно обращаться к конкретной группе элементов, не выше уровнем */
+/* убрать подчеркивание у ссылок */
+.menu li a {
+	text-decoration: none;
+}
+
+/* задать расстояние в 40px справа */
+.menu li a {
+	margin-right: 40px;
+}
+
+.buttonstyle1 {
+	font-size: 18px;
+	text-decoration: none;
+	padding: 11px 35px;
+	background: #03045E;
+}
+
+.nav .buttonstyle1 {
+	color: #FFFFFF;
+}
+
+.textbanner .buttonstyle1 {
+	color: #FFFFFF;
+}
+
+/* выровнять объекты на одной строке и по центру, отступ от верха */
+/* в первом блоке margin потянят родительские объекты вниз, поэтому padding */
+.nav {
+	display: flex;
+	align-items: center;
+	padding-top: 30px;
+}
+
+.menu {
+	margin-left: auto;
+}
+
+
+
+
+/* НАЧИНАЕТСЯ ВТОРОЙ КОНТЕЙНЕР В header */
+.banner {
+	display: flex;
+	align-items: center;
+}
+
+.banner img {
+	margin-top: 121px;
+	margin-left: auto;
+	margin-bottom: 200px;
+}
+
+
+.textbanner {
+	width: 585px;
+	height: 317px;
+	color: #03045E80
+}
+
+.textbanner li {
+	margin-bottom: 36px;
+}
+
+.headertextbanner {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+	color: #03045E;
+}
+
+
+
+/* НАЧИНАЕТСЯ СЕКЦИЯ FOOTER */
+.finalpodpisy {
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	color: #03045E;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.finalpodpisy a {
+	margin-left: auto;
+	text-decoration: none;
+}
