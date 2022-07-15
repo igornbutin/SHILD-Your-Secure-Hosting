@@ -1,3 +1,3 @@
 # SHILD — Your Secure Hosting
 
-https://igornbutin.github.io/shild/
+Посмотреть в живую можно здесь: https://igornbutin.github.io/shild/
