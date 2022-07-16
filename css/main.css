@@ -1,3 +1,4 @@
+/* Базовые параметры */
 body {
 	padding: 0;
 	margin: 0;
@@ -19,6 +20,8 @@ ul, li {
 	margin: 0;
 }
 
+
+/* -НАЧАЛО СЕКЦИИ "header"- */
 .header {
 	background: #F7F8FD;
 }
@@ -28,18 +31,19 @@ ul, li {
 	margin: 0 auto;
 }
 
-
-/* означает обратиться ко всем a в секции header? */
+/* все <a> в секции header станут цвета #03045E */
 .header a {
 	color: #03045E;
 }
 
-/* выравнять объекты в одну линию внутри другого объекта*/
+
+
+/* --НАЧАЛО РАЗДЕЛА НАВИГАЦИИ "nav"-- */
+/* выравнять объекты в одну линию внутри другого объекта */
 .menu {
 	display:  flex;
 }
 
-/* важно точно обращаться к конкретной группе элементов, не выше уровнем */
 /* убрать подчеркивание у ссылок */
 .menu li a {
 	text-decoration: none;
@@ -50,6 +54,7 @@ ul, li {
 	margin-right: 40px;
 }
 
+/* стили для кнопок */
 .buttonstyle1 {
 	font-size: 18px;
 	text-decoration: none;
@@ -58,31 +63,27 @@ ul, li {
 	border-radius: 5px;
 }
 
+/* задать отдельный цвет шрифта для текста кнопки "Login" */
 .nav .buttonstyle1 {
 	color: #FFFFFF;
 }
 
-.banner .buttonstyle1 {
-	background: #0098FF;
-	color: #FFFFFF;
-}
-
-/* выровнять объекты на одной строке и по центру, отступ от верха */
-/* в первом блоке margin потянят родительские объекты вниз, поэтому padding */
+/* выровнять объекты на одной строке и по центру */
+/* это один из первых блоков сайта => из-за бага в css margin потянят родительские объекты вниз, поэтому нужно заменить на padding */
 .nav {
 	display: flex;
 	align-items: center;
 	padding-top: 30px;
 }
 
+/* расположить по левому краю menu */
 .menu {
 	margin-left: auto;
 }
+/* --КОНЕЦ РАЗДЕЛА НАВИГАЦИИ "nav"-- */
 
 
-
-
-/* НАЧИНАЕТСЯ ВТОРОЙ КОНТЕЙНЕР В header */
+/* --НАЧАЛО РАЗДЕЛА С ИНФОРМАЦИЕЙ "banner"-- */
 .banner {
 	display: flex;
 	align-items: center;
@@ -93,7 +94,6 @@ ul, li {
 	margin-left: auto;
 	margin-bottom: 200px;
 }
-
 
 .textbanner {
 	width: 585px;
@@ -111,9 +111,17 @@ ul, li {
 	color: #03045E;
 }
 
+/* задать отдельный цвет шрифта для текста кнопки "View Pricing" */
+.banner .buttonstyle1 {
+	background: #0098FF;
+	color: #FFFFFF;
+}
+/* --КОНЕЦ РАЗДЕЛА С ИНФОРМАЦИЕЙ "banner"-- */
+/* -КОНЕЦ СЕКЦИИ "header"- */
 
 
-/* НАЧИНАЕТСЯ СЕКЦИЯ FOOTER */
+
+/* -НАЧАЛО СЕКЦИИ "footer"- */
 .finalpodpisy {
 	display: flex;
 	align-items: center;
@@ -128,3 +136,4 @@ ul, li {
 	text-decoration: none;
 	color: #03045E;
 }
+/* -КОНЕЦ СЕКЦИИ "footer"- */
